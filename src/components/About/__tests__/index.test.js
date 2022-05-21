@@ -1,20 +1,19 @@
-import react from 'react';
+// __tests__/About.test.js
+import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import About from "..";
+import About from '..';
 
 afterEach(cleanup);
-describe('About', () => {
-    it('should render correctly', () => {
-        render(<About />);
-        
-    });
-    it('matches snapshot DOM node structure', () => {
-       
-        const { container } = render(<About />);
-        expect(container).toMatchSnapshot();
-    }
 
-      
-    );
-    });
+describe('About component', () => {
+  it('renders', () => {
+    render(<About />);
+  });
+
+  it('matches snapshot', () => {
+    const { asFragment } = render(<About />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+})

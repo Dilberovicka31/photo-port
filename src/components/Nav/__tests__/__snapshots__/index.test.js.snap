@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Nav matches snapshot DOM node structure 1`] = `
-<div>
+exports[`Nav component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
   <header
     class="flex-row px-1"
   >
@@ -39,35 +39,14 @@ exports[`Nav matches snapshot DOM node structure 1`] = `
           </span>
         </li>
         <li
-          class="mx-2"
+          class="mx-1 false"
         >
           <span>
-            commercial
-          </span>
-        </li>
-        <li
-          class="mx-2"
-        >
-          <span>
-            portraits
-          </span>
-        </li>
-        <li
-          class="mx-2"
-        >
-          <span>
-            food
-          </span>
-        </li>
-        <li
-          class="mx-2"
-        >
-          <span>
-            landscape
+            Portraits
           </span>
         </li>
       </ul>
     </nav>
   </header>
-</div>
+</DocumentFragment>
 `;
